@@ -1,3 +1,5 @@
+/* Basic Portfolio CSS Stylesheet */
+/* General Body Styling */
 body {
   width: 960px;
   background-image: url(../images/spiration-light.png);
@@ -5,31 +7,37 @@ body {
   margin-right: auto;
 }
 
+/* Div Top Bar Section Styling */
 .header {
   display: flex;
   justify-content: space-between;
   font-family: 'Georgia', Times, Times New Roman, serif;
 }
 
+/* 'Your Name' Box Styling */
 h1 {
   background-color: #4aaaa5;
   color: #ffff;
   padding: 14px 16px;
 }
 
+/* 'About Me', 'Portfolio', 'Contact' Styling */
 h2 {
   color: #4aaaa5;
 }
 
+/* Profile Picture Styling */
 #bio-image {
   float: left;
   margin-right: 10px;
 }
 
+/* Hides Box Overflow for 'About', 'Portfolio', 'Contact' Links */
 .topnav {
   overflow: hidden;
 }
 
+/* Box Styling for Portfolio Section */
 .icon {
   position: relative;
   float: left;
@@ -38,6 +46,7 @@ h2 {
   text-align: center;
 }
 
+/* Text Styling for Portfolio Section */
 h3 {
   position: absolute;
   top: 145px;
@@ -47,6 +56,7 @@ h3 {
   background-color: #4aaaa5;
 }
 
+/* Styling for 'About' 'Portfolio' 'Contact' Links */
 .topnav a {
   float: left;
   color: #777777;
@@ -54,11 +64,13 @@ h3 {
   padding: 14px 16px;
 }
 
+/* Animates links in Top Bar Section */
 .topnav a:hover {
-  background-color: #ddd;
+  background-color: #4aaaa5;
   color: black;
 }
 
+/* Main Div Section Styling */
 div.container {
   padding: 20px;
   background-color: white;
@@ -66,11 +78,7 @@ div.container {
   height: 600px;
 }
 
-div.container_two {
-  font-family: arial, 'Helvetica Neue', Helvetica, sans-serif;
-
-}
-
+/* Contact Page Box Styling */
 input[type=text], select, textarea {
     width: 100%;
     padding: 12px;
@@ -82,10 +90,12 @@ input[type=text], select, textarea {
     resize: vertical;
 }
 
+/* Not sure if I need this..
 input[type=submit]:hover {
-  background-color: #ddd;
-
+  background-color: #ddd; */
 }
+
+/* Footer Styling */
 .footer {
     background-color: #666666;
     color: #ffffff;
@@ -96,7 +106,5 @@ input[type=submit]:hover {
     height: 50px;
     bottom: 0px;
     width: 100%;
-
+    font-size: 10px;
 }
-
---*/
