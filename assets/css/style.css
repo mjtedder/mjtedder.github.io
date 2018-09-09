@@ -1,118 +1,153 @@
-/* Basic Portfolio CSS Stylesheet */
-/* General Body Styling */
+/* CSS Stylesheet */
+
+/* Gives all elements a box with a border */
+* {box-sizing: border-box;
+}
+
+/* CSS Element Selectors Section */
+html {
+    height: 100%;
+}
+
+/* 'About Me' Section Styling */
 body {
-  background-image: url(../images/spiration-light.png);
-  color: #777777;
-  width: 100%;
-  position: relative;
-  width: 960px;
+    font-family: 'Arial', 'Helvetica Neue', Helvetica, sans-serif;
+    background-image: url(../images/spiration-light.png);
+    color: #777777;
+    height: 100%;
+    margin: 0px;
 }
 
-.content {
-  width: 960px;
-  margin-left: auto;
-  margin-right: auto;
-}
-
-/* Div Top Bar Section Styling */
-.header {
-  display: flex;
-  justify-content: space-between;
-  font-family: 'Georgia', Times, Times New Roman, serif;
-}
-
-/* 'Your Name' Box Styling */
-h1 {
-  background-color: #4aaaa5;
-  color: #ffff;
-  padding: 14px 16px;
-}
-
-/* 'About Me', 'Portfolio', 'Contact' Styling */
-h2 {
-  color: #4aaaa5;
-}
-
-/* Profile Picture Styling */
-#bio-image {
-  float: left;
-  margin-right: 10px;
-}
-
-/* Hides Box Overflow for 'About', 'Portfolio', 'Contact' Links */
-.topnav {
-  overflow: hidden;
-}
-
-/* Box Styling for Portfolio Section */
-.icon {
-  position: relative;
-  float: left;
-  margin: 5px;
-  font-size: 10px;
-  text-align: center;
-}
-
-/*Animates Icons in Portfolio Secion */
-.icon:hover {
-  opacity: .5;
-}
-
-/* Text Styling for Portfolio Section */
-h3 {
-  position: absolute;
-  top: 145px;
-  width: 180px;
-  padding: 10px;
-  color: #ffff;
-  background-color: #4aaaa5;
-}
-
-/* Styling for 'About' 'Portfolio' 'Contact' Links */
-.topnav a {
-  float: left;
-  color: #777777;
-  text-align: center;
-  padding: 14px 16px;
-  border-right: 1px solid;
-}
-
-/* Animates links in Top Bar Section */
-.topnav a:hover {
-  background-color: #4aaaa5;
-  color: black;
-}
-
-/* Main Div Section Styling */
-div.container {
-  padding: 20px;
-  margin-top: 20px;
-  background-color: white;
-  font-family: arial, 'Helvetica Neue', Helvetica, sans-serif;
-  overflow: auto;
-  line-height: 20px;
-
-}
-
-/* Contact Page Box Styling */
-input[type=text], select, textarea {
+/* Top Nav Bar Styling */
+header {
+    background-color: #ffffff;
+    border-bottom-style: solid;
+    border-bottom-color: #cccccc;
+    border-bottom-width: 2px;
     width: 100%;
-    padding: 12px;
-    border: 1px solid #ccc;
-    border-radius: 4px;
-    box-sizing: border-box;
-    margin-top: 6px;
-    margin-bottom: 16px;
-    resize: vertical;
+    overflow: auto;
 }
 
-
-input[type=submit]:hover {
-  background-color: #ddd;
-
+/* 'Your Name' Styling */
+h1 {
+    background-image: linear-gradient(#eee,#4aaaa5);
+    color: #ffffff;
+    font-family: 'Georgia', Times, 'Times New Roman', serif;
+    padding: 27px;
+    float: left;
+    margin: 0px;
 }
-.footer {
+
+/* 'About' 'Portfolio' 'Contact' Styling */
+h5 {
+    color: #777777;
     position: relative;
+    float: right;
+    top: 15px;
+}
+
+/* Main Body Section Sizing */
+section {
+    margin: 40px 0px 40px 0px;
+}
+
+/* Contact Form - Spacing from Top Line to 'Name' */
+form {
+    padding-top: 20px;
+}
+
+/* Contact Form - Input text sizing */
+input {
+    padding: 0px;
+    width: 100%;
+
+}
+
+/* Contact Form - Message input text field sizing */
+textarea {
+    font-family: 'Arial', 'Helvetica Neue', Helvetica, sans-serif;
+    height: 200px;
+    width: 100%;
+}
+
+/* 'About Me' Section Styling */
+p {
+    padding-top: 20px;
+    line-height: 1.6;
+    font-size: 16px;
+    margin: 0px;
+}
+/* CSS Element Selectors Section END */
+
+/* CSS Class Selectors Section */
+
+/* Top Nav Bar Sizing */
+.topnav {
+    margin: auto;
+    width: 100%;
+    max-width: 960px;
+}
+
+/* 'About Me' 'Portfolio' 'Contact' Styling/Sizing */
+.heading1 {
+    background-color: #ffffff;
+    color: #666666;
+    /* background-image: linear-gradient(#eee,#4aaaa5); */
+    font-family: 'Georgia', Times, 'Times New Roman', serif;
+    border-bottom-style: solid;
+    border-bottom-color: #dddddd;
+    border-bottom-width: 3px;
+    max-width: 900px;
+    width: 100%;
+    padding-left: 0px;
+}
+
+/* Main Body Content Styling */
+.content {
+    clear: both;
+    background-color: #ffffff;
+    width: 100%;
+    max-width: 960px;
+    margin: auto;
+    border: solid;
+    border-color: #cccccc;
+    border-width: 1px;
+    padding: 10px 30px 30px 30px;
+}
+
+/* Portfolio Section Icon Sizing */
+.icon {
+    display: inline-block;
+    width: 200px;
+    height: 200px;
+    margin: 30px 30px 0px 0px;
+    position: relative;
+}
+
+/* 'Hangman' 'RPG Game' 'Trivia Game' etc. Styling */
+h3.text {
+    clear: both;
+    background-color: #4aaaa5;
+    color: #ffffff;
+    font-family: 'Georgia', Times, Times New Roman, serif;
+    padding: 15px 0px 15px 0px;
+    position: absolute;
+    width: 100%;
+    bottom: 0px;
+    margin-bottom: 10px;
+    text-align: center;
+}
+
+/* Contact Form Submit Button Sizing */
+.submitbtn {
+    width: 100px;
+    color: #ffffff;
+    background-color: #4aaaa5;
+    padding: 15px 0px 15px 0px;
+}
+
+/* Footer Element Styling/Sizing */
+.footer {
     background-color: #666666;
     color: #ffffff;
     border-top-style: solid;
@@ -122,6 +157,66 @@ input[type=submit]:hover {
     height: 50px;
     bottom: 0px;
     width: 100%;
-    font-size: 10px;
-
+    min-width: 20px;
 }
+
+/* Clears float styling after Top Nav Section */
+  .container {
+      clear: both;
+}
+
+/* Main Body Section Sizing */
+.main {
+    min-height: 100%;
+    margin-bottom: -50px;
+}
+
+/* Bottom Space Between Main Section and Footer Section Sizing */
+.bottom {
+    height: 50px;
+}
+
+/* CSS Class Selectors Section END */
+
+/* CSS ID Selectors Section */
+
+/* Changes size of "Copyright" in Footer Section */
+p #copyright {
+  font-size: 8px;
+}
+
+/* Adds vertical lines before and after "Portfolio" link in Top Nav Section */
+#middle {
+    border-color: #dddddd;
+    border-left-style: solid;
+    border-right-style: solid;
+    border-width: 2px;
+    padding-left: 15px;
+    padding-right: 15px;
+    margin-left: 15px;
+    margin-right: 15px;
+}
+
+/* Profile Picture Positioning in 'About Me' Section */
+#bio-image {
+    float: left;
+    padding-right: 20px;
+    border-radius: 12px;
+}
+
+/* CSS ID Selectors Section END */
+
+/* CSS Pseudo Class Section */
+
+/* Removes Styling Changes Before and After Link is Clicked */
+a:link, a:visited {
+    text-decoration: none;
+    color: #777777;
+}
+
+/* Creates and animation of underlining link when hovering over with mouse */
+a:hover {
+    text-decoration: underline;
+}
+
+/* CSS Pseudo Class Section END */

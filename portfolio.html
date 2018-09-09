@@ -1,57 +1,74 @@
 <!DOCTYPE html>
 <html>
 
-  <head>
-    <meta charset="UTF-8">
-    <!-- Linking CSS-->
-    <link rel= "stylesheet" type="text/css" href="assets/css/style.css">
-    <!-- Reset CSS-->
-    <!--link rel= "stylesheet" type="text/css" href="assets/css/reset.css"-->
-    <title>Portfolio</title>
-  </head>
+<head>
+  <meta charset="UTF-8">
+  <!--Reset CSS-->
+  <link rel= "stylesheet" type="text/css" href="assets/css/reset.css">
+  <!--Linking CSS-->
+  <link rel="stylesheet" type="text/css" href="assets/css/style.css">
+  <title>Portfolio</title>
+</head>
 
-  <body>
-    <!--Div Top Bar Section-->
-    <div class="header">
-      <h1>Matt Tedder</h1>
+<body>
+  <!--Div Top Bar Section-->
+  <div class="main">
+    <header>
       <div class="topnav">
-        <a class="active" href="index.html">About</a>
-        <a href="portfolio.html">Portfolio</a>
-        <a href="contact.html">Contact</a>
+        <h1>Matt Tedder</h1>
+        <h5>
+          <a href="contact.html">Contact</a>
+        </h5>
+        <h5 id="middle">
+          <a href="portfolio.html">Portfolio</a>
+        </h5>
+        <h5>
+          <a href="index.html">About</a>
+        </h5>
       </div>
-    </div>
+    </header>
     <!--Div Top Bar Section END-->
-    <!--Main Div Section-->
-    <div class="container">
-      <h2>Portfolio</h2>
-      <hr>
-      <div class="icon">
-        <img class= "image" src="assets/images/image_one.jpg">
-        <h3>Hangman</h3>
+    <!--Main Div Header Section-->
+    <section>
+      <div class="content">
+        <h1 class="heading1">Portfolio</h1>
+        <!--Main Div Header Section END-->
+        <!--Main Div Body Secton-->
+        <div class="container">
+          <hr>
+          <div class="icon">
+            <img class="image" src="assets/images/image_one.jpg">
+            <h3 class="text">Hangman</h3>
+          </div>
+          <div class="icon">
+            <img class="image" src="assets/images/image_two.jpg">
+            <h3 class="text">RPG Game</h3>
+          </div>
+          <div class="icon">
+            <img class="image" src="assets/images/image_three.jpg">
+            <h3 class="text">Trivia Game</h3>
+          </div>
+          <div class="icon">
+            <img class="image" src="assets/images/image_four.jpg">
+            <h3 class="text">Rutger's Info Widget</h3>
+          </div>
+          <div class="icon">
+            <img class="image" src="assets/images/image_five.jpg">
+            <h3 class="text">Rock Paper Scissors</h3>
+          </div>
+        </div>
       </div>
-      <div class="icon">
-       <img class= "image" src="assets/images/image_two.jpg">
-       <h3>RPG Game</h3>
-     </div>
-     <div class="icon">
-       <img class= "image" src="assets/images/image_three.jpg">
-       <h3>Trivia Game</h3>
-     </div>
-     <div class="icon">
-      <img class= "image" src="assets/images/image_four.jpg">
-      <h3>Rutger's Info Widget</h3>
-     </div>
-     <div class="icon">
-      <img class= "image" src="assets/images/image_five.jpg">
-      <h3>Rock Paper Scissors</h3>
-     </div>
-   </div>
-   <!--Main Div Section END-->
-   <!--Div Footer Section-->
-   <div class="footer">
-     <p>Copyright</p>
-   </div>
-   <!--Div Footer Section END-->
-  </body>
+      <!--Main Div Body Section END-->
+    </section>
+    <!--Div Bottom Page Space-->
+    <div class="bottom"></div>
+  </div>
+  <!--Div Bottom Page Space END-->
+  <!--Div Footer Section-->
+  <div class="footer">
+    <p id="copyright">Copyright&copy;</p>
+  </div>
+  <!--Div Footer Section END-->
+</body>
 
 </html>
